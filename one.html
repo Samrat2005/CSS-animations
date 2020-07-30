@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>password generator</title>
+	<link rel="stylesheet" type="text/css" href="one.css">
+</head>
+<body>
+	<div class="box">
+    <div class="in">
+    <button onclick="getPassword()" class="input" id="copy" > 
+        generate password
+    </button> 
+	<button  class="copy" onClick="copyPassword()" title="copy"><img src="icons8-copy-96.png"></button>
+	</div>
+        <center><input type="text" class="p" id="geeks" readonly="true"></center>
+</div>
+<script>
+    function copyPassword(){
+        var copyPassText = document
+        .getElementById('geeks');
+        copyPassText.select();
+        copyPassText.setSelectionRange(0,9999);
+        document.execCommand('copy');
+    };
+</script>
+    <script> 
+        var alert = document.querySelector('alrtbox'); 
+        function getPassword(){
+            var chars = "QWERTYUIOPASFDGHJKLZXCVBNMqwertyuiopasfdhgjklzxcvbnm1234567890$()><"
+            var passwordLength = 10;
+            var password = '';
+            for(var i=0; i<passwordLength; i++){
+                var randomnumber = Math.floor(Math.random() * chars.length);
+                password += chars.substring(randomnumber,randomnumber+1);
+            }
+            document.getElementById('geeks').value = password;
+        }    
+    </script> 
+</body> 
+</html>

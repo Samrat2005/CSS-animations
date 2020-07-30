@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+   }
+   	body{
+    display: flex;
+    background-color: #19011d;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+    .box{
+    	width: 200px;
+    	height: 60px;
+    }
+    .box:hover > center{
+    	margin-top: 0px;
+    }
+    .in{
+    	align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .input{
+    	cursor: pointer;
+    	width: 150px;
+    	height: 60px;
+    	background-color: #51d0f2;
+    	border: none;
+    	border-top-left-radius: 15px;
+    	border-bottom-left-radius: 15px;
+    	margin-right: 0px;
+    	position: relative;
+    	border: none;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .copy{
+    	/*cursor: crosshair;*/
+    	cursor: pointer;
+    	width: 50px;
+    	height: 60px;
+    	margin-left: 0px;
+    	border-top-right-radius: 15px;
+    	border-bottom-right-radius: 15px;
+    	position: relative;
+    	border: none;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-left: 0;
+        background-color: yellow;
+    }
+    img{
+    	width: 30px;
+    	height: 30px;
+    }
+    .p{
+    	text-align: center;
+    	background-color: #000;
+    	color: #fff;
+    	border: none;
+    	width: 170px;
+    	height: 40px;
+    	font-size: 20px;
+    	border-bottom-left-radius: 10px;
+    	border-bottom-right-radius: 10px;    	
+    }
+    center{
+    	margin-top: -60px;
+    	transition: 0.4s
+    }
